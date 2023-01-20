@@ -27,7 +27,7 @@ import Wolves from "../assets/images/teams/wolves.png";
 const Header = () => {
   return (
     <div>
-      <header className="w-full flex flex-col mb-12">
+      <header className="w-full h-44 bg-white fixed flex flex-col mb-12">
         <div
           id="club-sites"
           className=" w-full h-14 flex flex-row justify-center items-center"
@@ -250,9 +250,9 @@ const Header = () => {
             </li>
           </ul>
           <div className="items-center flex-shrink-0 hidden lg:flex">
-            <button className="self-center px-8 py-3 rounded">Sign in</button>
-            <button className="self-center px-8 py-3 font-semibold rounded dark:bg-violet-400 dark:text-gray-900">
-              Sign up
+            <button className="self-center px-8 py-3 rounded">Logar</button>
+            <button className="self-center px-8 py-3 font-semibold rounded dark:bg-premier-rose dark:text-gray-900">
+              Cadastrar
             </button>
           </div>
           <button className="p-4 lg:hidden">
