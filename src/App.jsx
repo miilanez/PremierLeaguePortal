@@ -10,8 +10,8 @@ const App = () => {
     <div>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="sobre" element={<Sobre />} />
-        <Route path="classificacao" element={<Classificacao />} />
+        <Route path="about" element={<Sobre />} />
+        <Route path="standings" element={<Classificacao />} />
         <Route component={() => <div>Error 404!</div>} />
       </Routes>
     </div>
