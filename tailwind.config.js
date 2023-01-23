@@ -10,6 +10,8 @@ module.exports = {
         "premier-rose": "#ff2882",
         "premier-green": "#01fc9c",
         "premier-light-blue": "#04e2ef",
+        "premier-orange":"#fa4e07",
+        "premier-purple":"#9B3BF9",
       },
       backgroundImage: {
         main: "url('https://pbs.twimg.com/media/FZYWon8aMAEFAzW.jpg:large')",
