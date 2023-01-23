@@ -7,16 +7,16 @@ import Standings from "../components/Standings";
 const Home = () => {
   return (
     <div>
-      <main className="h-full bg-gradient-to-r from-emerald-300 to-sky-500">
+      <section className="h-full bg-gradient-to-r from-premier-green to-premier-light-blue">
         <Grid container>
           <Grid item xs={3}>
-            <Standings />
+            {/* <Standings /> */}
           </Grid>
           <Grid item xs={9}>
             <News />
           </Grid>
         </Grid>
-      </main>
+      </section>
     </div>
   );
 };
