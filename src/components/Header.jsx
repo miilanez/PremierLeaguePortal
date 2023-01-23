@@ -205,7 +205,7 @@ const Header = () => {
             <Link to="/">
               <div
                 id="logo"
-                className="bg-white rounded-full -m-10 -mt-16 w-24 md:w-44 h-24 md:h-44"
+                className="bg-white rounded-r-full -m-10 -mt-85px w-24 md:w-32 h-24 md:h-32"
               >
                 <img className="" src={PremierLeagueLogo} />
               </div>

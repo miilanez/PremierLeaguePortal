@@ -48,10 +48,6 @@ const News = () => {
               <span className="text-xs dark:text-premier-rose">
                 {news[0]?.PublisherDate}
               </span>
-              <p className="text-slate-400">
-                Ei delenit sensibus liberavisse pri. Quod suscipit no nam. Est
-                in graece fuisset, eos affert putent doctus id.
-              </p>
             </div>
           </a>
           <div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -69,7 +65,7 @@ const News = () => {
                 <h3 className="text-2xl text-white font-semibold group-hover:underline group-focus:underline">
                   {news[1]?.Title}
                 </h3>
-                <span className="text-xs dark:text-gray-400">
+                <span className="text-xs  dark:text-premier-rose">
                   {news[1]?.PublisherDate}
                 </span>
               </div>
@@ -88,7 +84,7 @@ const News = () => {
                 <h3 className="text-2xl text-white font-semibold group-hover:underline group-focus:underline">
                   {news[2]?.Title}
                 </h3>
-                <span className="text-xs dark:text-gray-400">
+                <span className="text-xs  dark:text-premier-rose">
                   {news[2]?.PublisherDate}
                 </span>
               </div>
@@ -107,7 +103,7 @@ const News = () => {
                 <h3 className="text-2xl text-white font-semibold group-hover:underline group-focus:underline">
                   {news[3]?.Title}
                 </h3>
-                <span className="text-xs dark:text-gray-400">
+                <span className="text-xs  dark:text-premier-rose">
                   {news[3]?.PublisherDate}
                 </span>
               </div>
@@ -126,7 +122,7 @@ const News = () => {
                 <h3 className="text-2xl text-white font-semibold group-hover:underline group-focus:underline">
                   {news[4]?.Title}
                 </h3>
-                <span className="text-xs dark:text-gray-400">
+                <span className="text-xs  dark:text-premier-rose">
                   {news[4]?.PublisherDate}
                 </span>
               </div>
@@ -145,7 +141,7 @@ const News = () => {
                 <h3 className="text-2xl text-white font-semibold group-hover:underline group-focus:underline">
                   {news[5]?.Title}
                 </h3>
-                <span className="text-xs dark:text-gray-400">
+                <span className="text-xs  dark:text-premier-rose">
                   {news[5]?.PublisherDate}
                 </span>
               </div>
@@ -164,7 +160,7 @@ const News = () => {
                 <h3 className="text-2xl text-white font-semibold group-hover:underline group-focus:underline">
                   {news[6]?.Title}
                 </h3>
-                <span className="text-xs dark:text-gray-400">
+                <span className="text-xs  dark:text-premier-rose">
                   {news[6]?.PublisherDate}
                 </span>
               </div>
