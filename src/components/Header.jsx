@@ -26,8 +26,8 @@ import Wolves from "../assets/images/teams/wolves.png";
 
 const Header = () => {
   return (
-    <div>
-      <header className="w-full h-44 bg-white fixed flex flex-col mb-12">
+    <div className="h-48">
+      <header className="w-full bg-white fixed flex flex-col">
         <div
           id="club-sites"
           className=" w-full h-14 flex flex-row justify-center items-center"
@@ -205,7 +205,7 @@ const Header = () => {
             <Link to="/">
               <div
                 id="logo"
-                className="bg-white rounded-full -m-10 w-24 md:w-44 h-24 md:h-44"
+                className="bg-white rounded-full -m-10 -mt-16 w-24 md:w-44 h-24 md:h-44"
               >
                 <img className="" src={PremierLeagueLogo} />
               </div>
