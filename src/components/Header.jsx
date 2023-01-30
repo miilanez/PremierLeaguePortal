@@ -30,7 +30,7 @@ const Header = () => {
       <header className="w-full bg-white fixed flex flex-col">
         <div
           id="club-sites"
-          className=" w-full h-14 flex flex-row justify-center items-center"
+          className=" hidden w-full h-14 md:flex flex-row justify-center items-center"
         >
           <ul className="flex flex-row justify-around">
             <li>
@@ -205,7 +205,7 @@ const Header = () => {
             <Link to="/">
               <div
                 id="logo"
-                className="bg-white rounded-r-full -m-10 -mt-85px w-24 md:w-32 h-24 md:h-32"
+                className="bg-white rounded-r-full -m-10 md:-mt-85px w-24 md:w-32 h-24 md:h-32"
               >
                 <img className="" src={PremierLeagueLogo} />
               </div>
