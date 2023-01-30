@@ -36,7 +36,7 @@ const Header = () => {
             <li>
               <Link to="/">
                 <img
-                  className="w-10 h-10 m-1 hidden lg:flex justify-center items-center"
+                  className="w-8 h-8 m-1 hidden lg:flex justify-center items-center"
                   src={Arsenal}
                 />
               </Link>
@@ -44,15 +44,15 @@ const Header = () => {
             <li>
               <Link to="/">
                 <img
-                  className="w-10 h-10 m-1 hidden lg:flex justify-center items-center"
+                  className="w-8 h-8 m-1 hidden lg:flex justify-center items-center"
                   src={AstonVilla}
                 />
               </Link>
             </li>
             <li>
-              <Link to="/">
+              <Link to="https://www.afcb.co.uk/?cachebust=2023011413">
                 <img
-                  className="w-10 h-10 m-1 hidden lg:flex justify-center items-center"
+                  className="w-8 h-8 m-1 hidden lg:flex justify-center items-center"
                   src={Bournemouth}
                 />
               </Link>
@@ -60,7 +60,7 @@ const Header = () => {
             <li>
               <Link to="/">
                 <img
-                  className="w-10 h-10 m-1 hidden lg:flex justify-center items-center"
+                  className="w-8 h-8 m-1 hidden lg:flex justify-center items-center"
                   src={Brentford}
                 />
               </Link>
@@ -68,7 +68,7 @@ const Header = () => {
             <li>
               <Link to="/">
                 <img
-                  className="w-10 h-10 m-1 hidden lg:flex justify-center items-center"
+                  className="w-8 h-8 m-1 hidden lg:flex justify-center items-center"
                   src={Brighton}
                 />
               </Link>
@@ -76,7 +76,7 @@ const Header = () => {
             <li>
               <Link to="/">
                 <img
-                  className="w-10 h-10 m-1 hidden lg:flex justify-center items-center"
+                  className="w-8 h-8 m-1 hidden lg:flex justify-center items-center"
                   src={Chelsea}
                 />
               </Link>
@@ -84,7 +84,7 @@ const Header = () => {
             <li>
               <Link to="/">
                 <img
-                  className="w-10 h-10 m-1 hidden lg:flex justify-center items-center"
+                  className="w-8 h-8 m-1 hidden lg:flex justify-center items-center"
                   src={CrystalPalace}
                 />
               </Link>
@@ -92,7 +92,7 @@ const Header = () => {
             <li>
               <Link to="/">
                 <img
-                  className="w-10 h-10 m-1 hidden lg:flex justify-center items-center"
+                  className="w-8 h-8 m-1 hidden lg:flex justify-center items-center"
                   src={Everton}
                 />
               </Link>
@@ -100,7 +100,7 @@ const Header = () => {
             <li>
               <Link to="/">
                 <img
-                  className="w-10 h-10 m-1 hidden lg:flex justify-center items-center"
+                  className="w-8 h-8 m-1 hidden lg:flex justify-center items-center"
                   src={Fulham}
                 />
               </Link>
@@ -108,7 +108,7 @@ const Header = () => {
             <li>
               <Link to="/">
                 <img
-                  className="w-10 h-10 m-1 hidden lg:flex justify-center items-center"
+                  className="w-8 h-8 m-1 hidden lg:flex justify-center items-center"
                   src={Leeds}
                 />
               </Link>
@@ -116,7 +116,7 @@ const Header = () => {
             <li>
               <Link to="/">
                 <img
-                  className="w-10 h-10 m-1 hidden lg:flex justify-center items-center"
+                  className="w-8 h-8 m-1 hidden lg:flex justify-center items-center"
                   src={Leicester}
                 />
               </Link>
@@ -124,7 +124,7 @@ const Header = () => {
             <li>
               <Link to="/">
                 <img
-                  className="w-10 h-10 m-1 hidden lg:flex justify-center items-center"
+                  className="w-8 h-8 m-1 hidden lg:flex justify-center items-center"
                   src={Liverpool}
                 />
               </Link>
@@ -132,7 +132,7 @@ const Header = () => {
             <li>
               <Link to="/">
                 <img
-                  className="w-10 h-10 m-1 hidden lg:flex justify-center items-center"
+                  className="w-8 h-8 m-1 hidden lg:flex justify-center items-center"
                   src={ManCity}
                 />
               </Link>
@@ -140,7 +140,7 @@ const Header = () => {
             <li>
               <Link to="/">
                 <img
-                  className="w-10 h-10 m-1 hidden lg:flex justify-center items-center"
+                  className="w-8 h-8 m-1 hidden lg:flex justify-center items-center"
                   src={ManUtd}
                 />
               </Link>
@@ -148,7 +148,7 @@ const Header = () => {
             <li>
               <Link to="/">
                 <img
-                  className="w-10 h-10 m-1 hidden lg:flex justify-center items-center"
+                  className="w-8 h-8 m-1 hidden lg:flex justify-center items-center"
                   src={Newcastle}
                 />
               </Link>
@@ -156,7 +156,7 @@ const Header = () => {
             <li>
               <Link to="/">
                 <img
-                  className="w-10 h-10 m-1 hidden lg:flex justify-center items-center"
+                  className="w-8 h-8 m-1 hidden lg:flex justify-center items-center"
                   src={Nottingham}
                 />
               </Link>
@@ -164,7 +164,7 @@ const Header = () => {
             <li>
               <Link to="/">
                 <img
-                  className="w-10 h-10 m-1 hidden lg:flex justify-center items-center"
+                  className="w-8 h-8 m-1 hidden lg:flex justify-center items-center"
                   src={Southampton}
                 />
               </Link>
@@ -172,7 +172,7 @@ const Header = () => {
             <li>
               <Link to="/">
                 <img
-                  className="w-10 h-10 m-1 hidden lg:flex justify-center items-center"
+                  className="w-8 h-8 m-1 hidden lg:flex justify-center items-center"
                   src={Tottenham}
                 />
               </Link>
@@ -180,7 +180,7 @@ const Header = () => {
             <li>
               <Link to="/">
                 <img
-                  className="w-10 h-10 m-1 hidden lg:flex justify-center items-center"
+                  className="w-8 h-8 m-1 hidden lg:flex justify-center items-center"
                   src={WestHam}
                 />
               </Link>
@@ -188,7 +188,7 @@ const Header = () => {
             <li>
               <Link to="/">
                 <img
-                  className="w-10 h-10 m-1 hidden lg:flex justify-center items-center"
+                  className="w-8 h-8 m-1 hidden lg:flex justify-center items-center"
                   src={Wolves}
                 />
               </Link>
