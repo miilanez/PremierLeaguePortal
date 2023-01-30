@@ -102,36 +102,38 @@ export default function Standings() {
   console.log("dados tabela", standing);
 
   return (
-    <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
-        <TableHead>
-          <TableRow>
-            {columns?.map((column) => (
-              <TableCell
-                key={column.id}
-                align={column.align}
-                sx={{
-                  backgroundColor: "#003049",
-                  color: "white",
-                }}
-              >
-                {column.headerName}
-              </TableCell>
-            ))}
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {standing?.map((row) => (
-            <TableRow hover role="checkbox" tabIndex={-1} key={row.name}>
-              {columns.map(({ field, render }) => (
-                <TableCell align="center">
-                  {!!render ? render(row) : row?.[field]}
+    <div className="p-6">
+      <TableContainer component={Paper}>
+        <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
+          <TableHead>
+            <TableRow>
+              {columns?.map((column) => (
+                <TableCell
+                  key={column.id}
+                  align={column.align}
+                  sx={{
+                    backgroundColor: "#003049",
+                    color: "white",
+                  }}
+                >
+                  {column.headerName}
                 </TableCell>
               ))}
             </TableRow>
-          ))}
-        </TableBody>
-      </Table>
-    </TableContainer>
+          </TableHead>
+          <TableBody>
+            {standing?.map((row) => (
+              <TableRow hover role="checkbox" tabIndex={-1} key={row.name}>
+                {columns.map(({ field, render }) => (
+                  <TableCell align="center">
+                    {!!render ? render(row) : row?.[field]}
+                  </TableCell>
+                ))}
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer>
+    </div>
   );
 }
