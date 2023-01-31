@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import PremierLeagueLongLogo from "../assets/images/premier-league-logo-header-full.png";

@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
+/* eslint-disable jsx-a11y/alt-text */
 import * as React from "react";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
@@ -9,13 +11,14 @@ import Paper from "@mui/material/Paper";
 import { useEffect } from "react";
 import { useState } from "react";
 import useStandings from "../services/api/useStandings";
+import PremierLeagueLongLogo from "../assets/images/premier-league-logo-header-full.png";
 
 const columns = [
   {
     field: "Position",
     align: "center",
     width: 10,
-    headerName: "",
+    headerName: "Pos",
     headerAlign: "center",
   },
   {
@@ -23,7 +26,7 @@ const columns = [
     render: (row) => (
       // eslint-disable-next-line jsx-a11y/alt-text
       <img
-        style={{ height: "25px", maxWidth: "25px" }}
+        style={{ height: "20px", maxWidth: "20px" }}
         src={row.SquadLogo}
       ></img>
     ),
@@ -34,45 +37,45 @@ const columns = [
   {
     field: "Name",
     align: "center",
-    headerName: "Equipe",
+    headerName: "Club",
     headerAlign: "center",
   },
   {
     field: "Points",
     align: "center",
-    headerName: "Pontos",
+    headerName: "Pts",
     headerAlign: "center",
   },
   {
     field: "Played",
     align: "center",
-    headerName: "Jogos",
+    headerName: "Pl",
     headerAlign: "center",
   },
-  {
-    field: "Winned",
-    align: "center",
-    headerName: "Vitórias",
-    headerAlign: "center",
-  },
-  {
-    field: "Tie",
-    align: "center",
-    headerName: "Empates",
-    headerAlign: "center",
-  },
-  {
-    field: "Loosed",
-    align: "center",
-    headerName: "Derrotas",
-    headerAlign: "center",
-  },
-  {
-    field: "Goal Difference",
-    align: "center",
-    headerName: "Saldo de Gols",
-    headerAlign: "center",
-  },
+  // {
+  //   field: "Winned",
+  //   align: "center",
+  //   headerName: "Vitórias",
+  //   headerAlign: "center",
+  // },
+  // {
+  //   field: "Tie",
+  //   align: "center",
+  //   headerName: "Empates",
+  //   headerAlign: "center",
+  // },
+  // {
+  //   field: "Loosed",
+  //   align: "center",
+  //   headerName: "Derrotas",
+  //   headerAlign: "center",
+  // },
+  // {
+  //   field: "Goal Difference",
+  //   align: "center",
+  //   headerName: "Saldo de Gols",
+  //   headerAlign: "center",
+  // },
 ];
 
 export default function Standings() {
@@ -102,9 +105,19 @@ export default function Standings() {
   console.log("dados tabela", standing);
 
   return (
-    <div className="p-6">
+    <div className="p-6 flex flex-col">
+      <div id="top-standings" className="h-24 bg-premier-rose  rounded-t-sm">
+        <div className="flex items-center justify-center">
+          <img className="h-14" src={PremierLeagueLongLogo} />
+        </div>
+        <div className="h-8 bg-white flex justify-center  inset-x-0 bottom-0 mx-3 rounded-t-sm">
+          <h1 className="text-premier-primary text-lg font-semibold">
+            First Team
+          </h1>
+        </div>
+      </div>
       <TableContainer component={Paper}>
-        <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
+        <Table aria-label="simple table">
           <TableHead>
             <TableRow>
               {columns?.map((column) => (
@@ -112,7 +125,7 @@ export default function Standings() {
                   key={column.id}
                   align={column.align}
                   sx={{
-                    backgroundColor: "#003049",
+                    backgroundColor: "#37003c",
                     color: "white",
                   }}
                 >
@@ -123,7 +136,18 @@ export default function Standings() {
           </TableHead>
           <TableBody>
             {standing?.map((row) => (
-              <TableRow hover role="checkbox" tabIndex={-1} key={row.name}>
+              <TableRow
+                hover
+                role="checkbox"
+                tabIndex={-1}
+                key={row.name}
+                sx={{
+                  "&.MuiTableRow-root:hover": {
+                    background: "linear-gradient(to right, #9B3BF9, #ff2882)",
+                    cursor: "pointer",
+                  },
+                }}
+              >
                 {columns.map(({ field, render }) => (
                   <TableCell align="center">
                     {!!render ? render(row) : row?.[field]}
