@@ -3,10 +3,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import PremierLeagueLongLogo from "../assets/images/premier-league-logo-header-full.png";
+import Sponsors from "./Sponsors";
 
 const Footer = () => {
   return (
-    <footer className="px-4 divide-y dark:bg-footer dark:text-gray-100">
+    <footer className="flex flex-col px-4 divide-y dark:bg-footer dark:text-gray-100">
+      <Sponsors />
       <div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
         <div className="lg:w-1/3">
           <a

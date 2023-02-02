@@ -8,8 +8,7 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
-import { useEffect } from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import useStandings from "../services/api/useStandings";
 import PremierLeagueLongLogo from "../assets/images/premier-league-logo-header-full.png";
 
@@ -105,19 +104,19 @@ export default function Standings() {
   console.log("dados tabela", standing);
 
   return (
-    <div className="p-6 flex flex-col">
-      <div id="top-standings" className="h-24 bg-premier-rose  rounded-t-sm">
+    <div className="p-1 flex flex-col">
+      <div id="top-standings" className="h-24 bg-premier-rose rounded-t-sm">
         <div className="flex items-center justify-center">
           <img className="h-14" src={PremierLeagueLongLogo} />
         </div>
-        <div className="h-8 bg-white flex justify-center  inset-x-0 bottom-0 mx-3 rounded-t-sm">
+        <div className="h-8 bg-white flex justify-center inset-x-0 bottom-0 mx-3 rounded-t-sm">
           <h1 className="text-premier-primary text-lg font-semibold">
-            First Team
+            Standings
           </h1>
         </div>
       </div>
       <TableContainer component={Paper}>
-        <Table aria-label="simple table">
+        <Table size="small" aria-label="a dense table">
           <TableHead>
             <TableRow>
               {columns?.map((column) => (
