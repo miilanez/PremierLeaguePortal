@@ -1,50 +1,80 @@
-import React from "react";
+import * as React from "react";
+import Table from "@mui/material/Table";
+import TableBody from "@mui/material/TableBody";
+import TableCell from "@mui/material/TableCell";
+import TableContainer from "@mui/material/TableContainer";
+import TableHead from "@mui/material/TableHead";
+import TableRow from "@mui/material/TableRow";
+import Paper from "@mui/material/Paper";
+import Player from "../assets/images/p223094.png";
 
-const CardStats = () => {
+function createData(name, calories  ) {
+  return { name, calories };
+}
+
+const rows = [
+  createData("Club", "Club Name"),
+  createData("Appearances", 237),
+  createData("Goals", 262),
+];
+
+export default function CardStats() {
   return (
     <div className="p-1">
-      <div className="max-w-lg p-6 shadow-md my-5 dark:bg-gray-900 dark:text-gray-100">
+      <div className="max-w-lg p-2 shadow-md my-5 dark:bg-white dark:text-black">
         <div className="flex justify-between pb-4 border-bottom">
           <div className="flex items-center">
             <a
               rel="noopener noreferrer"
               href="#"
-              className="mb-0 capitalize dark:text-gray-100"
+              className="mb-0 capitalize font-semibold"
             >
-              Photography
+              Featured Player
             </a>
           </div>
-          <a rel="noopener noreferrer" href="#">
-            See All
-          </a>
         </div>
-        <div className="space-y-4">
-          <div className="space-y-2">
-            <img
-              src="https://source.unsplash.com/random/480x360/?4"
-              alt=""
-              className="block object-cover object-center w-full rounded-md h-72 dark:bg-gray-500"
-            />
-            <div className="flex items-center text-xs">
-              <span>6 min ago</span>
+        <div className="">
+          <div className="bg-footer bg-cover bg-center w-full h-40 flex flex-row">
+            <div id="left-div" className="flex flex-col p-3 w-2/4 text-white">
+              <h1 className="text-white font-bold text-lg">Name Player</h1>
+              <h4 className="">Position</h4>
+              <h3 className="mt-3">Country</h3>
+            </div>
+            <div
+              id="right-div"
+              className="w-2/4 flex justify-center items-center"
+            >
+              <img className="w-28" src={Player} />
             </div>
           </div>
-          <div className="space-y-2">
-            <a rel="noopener noreferrer" href="#" className="block">
-              <h3 className="text-xl font-semibold dark:text-violet-400">
-                Facere ipsa nulla corrupti praesentium pariatur architecto
-              </h3>
-            </a>
-            <p className="leading-snug dark:text-gray-400">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Repellat, excepturi. Lorem ipsum dolor sit amet consectetur,
-              adipisicing elit. Repellat, excepturi.
-            </p>
+          <div id="table" className="space-y-2">
+            <TableContainer component={Paper}>
+              <Table size="small" aria-label="a dense table">
+                {/* <TableHead>
+                  <TableRow>
+                    <TableCell>Dessert (100g serving)</TableCell>
+                    <TableCell align="right">Calories</TableCell>
+                  </TableRow>
+                </TableHead> */}
+                <TableBody>
+                  {rows.map((row) => (
+                    <TableRow
+                      key={row.name}
+                      sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+                    >
+                      <TableCell component="th" scope="row">
+                        {row.name}
+                      </TableCell>
+                      <TableCell align="right">{row.calories}</TableCell>
+                      <TableCell align="right">{row.fat}</TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </TableContainer>
           </div>
         </div>
       </div>
     </div>
   );
-};
-
-export default CardStats;
+}

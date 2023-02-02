@@ -34,164 +34,262 @@ const Header = () => {
         >
           <ul className="flex flex-row justify-around">
             <li>
-              <Link to="/">
+              <a
+                rel="noopener noreferrer"
+                href="https://www.arsenal.com"
+                className=""
+              >
                 <img
                   className="w-8 h-8 m-1 hidden lg:flex justify-center items-center hover:scale-125"
                   src={Arsenal}
                 />
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/">
+              <a
+                rel="noopener noreferrer"
+                href="https://www.arsenal.com"
+                className=""
+              >
+                {" "}
                 <img
                   className="w-8 h-8 m-1 hidden lg:flex justify-center items-center hover:scale-125"
                   src={AstonVilla}
                 />
-              </Link>
+              </a>{" "}
             </li>
             <li>
-              <Link to="https://www.afcb.co.uk/?cachebust=2023011413">
+              <a
+                rel="noopener noreferrer"
+                href="https://www.arsenal.com"
+                className=""
+              >
                 <img
                   className="w-8 h-8 m-1 hidden lg:flex justify-center items-center hover:scale-125"
                   src={Bournemouth}
                 />
-              </Link>
+              </a>{" "}
             </li>
             <li>
-              <Link to="/">
+              <a
+                rel="noopener noreferrer"
+                href="https://www.arsenal.com"
+                className=""
+              >
+                {" "}
                 <img
                   className="w-8 h-8 m-1 hidden lg:flex justify-center items-center hover:scale-125"
                   src={Brentford}
                 />
-              </Link>
+              </a>{" "}
             </li>
             <li>
-              <Link to="/">
+              <a
+                rel="noopener noreferrer"
+                href="https://www.arsenal.com"
+                className=""
+              >
+                {" "}
                 <img
                   className="w-8 h-8 m-1 hidden lg:flex justify-center items-center hover:scale-125"
                   src={Brighton}
                 />
-              </Link>
+              </a>{" "}
             </li>
             <li>
-              <Link to="/">
+              <a
+                rel="noopener noreferrer"
+                href="https://www.arsenal.com"
+                className=""
+              >
+                {" "}
                 <img
                   className="w-8 h-8 m-1 hidden lg:flex justify-center items-center hover:scale-125"
                   src={Chelsea}
                 />
-              </Link>
+              </a>{" "}
             </li>
             <li>
-              <Link to="/">
+              <a
+                rel="noopener noreferrer"
+                href="https://www.arsenal.com"
+                className=""
+              >
+                {" "}
                 <img
                   className="w-8 h-8 m-1 hidden lg:flex justify-center items-center hover:scale-125"
                   src={CrystalPalace}
                 />
-              </Link>
+              </a>{" "}
             </li>
             <li>
-              <Link to="/">
+              <a
+                rel="noopener noreferrer"
+                href="https://www.arsenal.com"
+                className=""
+              >
+                {" "}
                 <img
                   className="w-8 h-8 m-1 hidden lg:flex justify-center items-center hover:scale-125"
                   src={Everton}
                 />
-              </Link>
+              </a>{" "}
             </li>
             <li>
-              <Link to="/">
+              <a
+                rel="noopener noreferrer"
+                href="https://www.arsenal.com"
+                className=""
+              >
+                {" "}
                 <img
                   className="w-8 h-8 m-1 hidden lg:flex justify-center items-center hover:scale-125"
                   src={Fulham}
                 />
-              </Link>
+              </a>{" "}
             </li>
             <li>
-              <Link to="/">
+              <a
+                rel="noopener noreferrer"
+                href="https://www.arsenal.com"
+                className=""
+              >
+                {" "}
                 <img
                   className="w-8 h-8 m-1 hidden lg:flex justify-center items-center hover:scale-125"
                   src={Leeds}
                 />
-              </Link>
+              </a>{" "}
             </li>
             <li>
-              <Link to="/">
+              <a
+                rel="noopener noreferrer"
+                href="https://www.arsenal.com"
+                className=""
+              >
+                {" "}
                 <img
                   className="w-8 h-8 m-1 hidden lg:flex justify-center items-center hover:scale-125"
                   src={Leicester}
                 />
-              </Link>
+              </a>{" "}
             </li>
             <li>
-              <Link to="/">
+              <a
+                rel="noopener noreferrer"
+                href="https://www.arsenal.com"
+                className=""
+              >
+                {" "}
                 <img
                   className="w-8 h-8 m-1 hidden lg:flex justify-center items-center hover:scale-125"
                   src={Liverpool}
                 />
-              </Link>
+              </a>{" "}
             </li>
             <li>
-              <Link to="/">
+              <a
+                rel="noopener noreferrer"
+                href="https://www.arsenal.com"
+                className=""
+              >
+                {" "}
                 <img
                   className="w-8 h-8 m-1 hidden lg:flex justify-center items-center hover:scale-125"
                   src={ManCity}
                 />
-              </Link>
+              </a>{" "}
             </li>
             <li>
-              <Link to="/">
+              <a
+                rel="noopener noreferrer"
+                href="https://www.arsenal.com"
+                className=""
+              >
+                {" "}
                 <img
                   className="w-8 h-8 m-1 hidden lg:flex justify-center items-center hover:scale-125"
                   src={ManUtd}
                 />
-              </Link>
+              </a>{" "}
             </li>
             <li>
-              <Link to="/">
+              <a
+                rel="noopener noreferrer"
+                href="https://www.arsenal.com"
+                className=""
+              >
+                {" "}
                 <img
                   className="w-8 h-8 m-1 hidden lg:flex justify-center items-center hover:scale-125"
                   src={Newcastle}
                 />
-              </Link>
+              </a>{" "}
             </li>
             <li>
-              <Link to="/">
+              <a
+                rel="noopener noreferrer"
+                href="https://www.arsenal.com"
+                className=""
+              >
+                {" "}
                 <img
                   className="w-8 h-8 m-1 hidden lg:flex justify-center items-center hover:scale-125"
                   src={Nottingham}
                 />
-              </Link>
+              </a>{" "}
             </li>
             <li>
-              <Link to="/">
+              <a
+                rel="noopener noreferrer"
+                href="https://www.arsenal.com"
+                className=""
+              >
+                {" "}
                 <img
                   className="w-8 h-8 m-1 hidden lg:flex justify-center items-center hover:scale-125"
                   src={Southampton}
                 />
-              </Link>
+              </a>{" "}
             </li>
             <li>
-              <Link to="/">
+              <a
+                rel="noopener noreferrer"
+                href="https://www.arsenal.com"
+                className=""
+              >
+                {" "}
                 <img
                   className="w-8 h-8 m-1 hidden lg:flex justify-center items-center hover:scale-125"
                   src={Tottenham}
                 />
-              </Link>
+              </a>{" "}
             </li>
             <li>
-              <Link to="/">
+              <a
+                rel="noopener noreferrer"
+                href="https://www.arsenal.com"
+                className=""
+              >
+                {" "}
                 <img
                   className="w-8 h-8 m-1 hidden lg:flex justify-center items-center hover:scale-125"
                   src={WestHam}
                 />
-              </Link>
+              </a>{" "}
             </li>
             <li>
-              <Link to="/">
+              <a
+                rel="noopener noreferrer"
+                href="https://www.arsenal.com"
+                className=""
+              >
+                {" "}
                 <img
                   className="w-8 h-8 m-1 hidden lg:flex justify-center items-center hover:scale-125"
                   src={Wolves}
                 />
-              </Link>
+              </a>{" "}
             </li>
           </ul>
         </div>
