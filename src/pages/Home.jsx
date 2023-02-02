@@ -3,6 +3,7 @@ import News from "../components/News";
 import Standings from "../components/Standings";
 import Nike from "../components/Nike";
 import NextMatch from "../components/NextMatch";
+import CardStats from "../components/CardStats";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
           <div className="md:mr-3 col-span-1 order-last md:order-1">
             <NextMatch />
             <Standings />
+            <CardStats />
           </div>
           <div className="col-span-3 order-1 md:order-last">
             <News />
