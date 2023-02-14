@@ -1,9 +1,9 @@
 import React from "react";
 import News from "../components/News";
 import Standings from "../components/Standings";
-import Nike from "../components/Nike";
 import NextMatch from "../components/NextMatch";
 import CardStats from "../components/CardStats";
+import SponsorNike from "../components/SponsorNike";
 
 const Home = () => {
   return (
@@ -19,7 +19,7 @@ const Home = () => {
           </div>
           <div className="col-span-3 order-1 md:order-last">
             <News />
-            <Nike />
+            <SponsorNike />
           </div>
         </div>
         <div></div>

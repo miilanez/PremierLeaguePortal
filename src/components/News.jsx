@@ -39,7 +39,7 @@ const News = () => {
           >
             <img
               src={news[0]?.Image}
-              className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-premier-primary"
+              className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 bg-premier-primary"
             />
             <div className="p-6 space-y-2 lg:col-span-5">
               <h3 className="text-2xl text-white font-semibold sm:text-4xl group-hover:underline group-focus:underline">

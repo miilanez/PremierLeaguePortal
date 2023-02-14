@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import EA from "../assets/images/sponsors/ea.png";
 import Barclays from "../assets/images/sponsors/barclays.png";

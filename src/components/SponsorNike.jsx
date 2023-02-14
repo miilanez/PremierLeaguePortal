@@ -1,9 +1,10 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import NikeBalls from "../assets/images/combined_ball_image.png";
 
-export default function Nike() {
+export default function SponsorNike() {
   return (
-    <div>
+    <div className="container max-w-7xl p-1 mx-auto">
       <section className="h-full mt-12 p-5 px-8 flex flex-col bg-gradient-to-b from-premier-rose to-premier-orange">
         <div className="container mx-auto flex flex-row items-center justify-center space-y-8 lg:space-y-0 lg:flex-row lg:justify-between">
           <img src={NikeBalls} className="w-56" />
