@@ -7,8 +7,8 @@ import CardStats from "../components/CardStats";
 
 const Home = () => {
   return (
-    <div>
-      <section className="h-full p-6 flex flex-col bg-gradient-to-r from-premier-green to-premier-light-blue">
+    <div className="">
+      <section className="h-full p-6  flex flex-col items-center justify-center bg-gradient-to-r from-premier-green to-premier-light-blue">
         {/* Dividindo a tela em duas partes e executando responsividade para disp moveis */}
         <div className="grid grid-cols-1 md:grid-cols-4">
           {/* order-* altera a ordem em q a div será mostrada em tela. como se fosse o col-reverse */}
